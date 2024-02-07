@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="pdlc_forestryPack.miningShaft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../bin/shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_storeItem_miningShaftTower</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>store_miningShaftTower.png</image>
+        <price>250000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>FARMERTOOLS</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>model/stoneQuarry.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" placementPositionSnapSize="0.5" placementRotationSnapAngle="90" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="largeImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="hotspot" teleportNode="hotspot" />
+    </hotspots>
+
+    <heapSpawner>
+        <spawnArea fillType="STONE" litersPerHour="2000" >
+            <area startNode="spawnArea1Start" widthNode="spawnArea1Width" heightNode="spawnArea1Height" />
+            <!-- <effectNodes> -->
+                <!-- <effectNode effectNode="effectSmoke" materialType="unloadingSmoke" fadeTime="0.5" /> -->
+                <!-- <effectNode effectNode="effectParticle" effectClass="ParticleEffect" particleType="MINING_SHAFT" emitCountScale="3"/> -->
+            <!-- </effectNodes> -->
+            <!-- <sounds> -->
+                <!-- <work file="miningShaftTower/sounds/miningShaftTowerWork.wav" linkNode="tower" loops="0" innerRadius="7" outerRadius="40" supportsReverb="false"> -->
+                    <!-- <volume indoor="0.4" outdoor="2.5"/> -->
+                <!-- </work> -->
+                <!-- <work2 file="miningShaftTower/sounds/machineRoom.wav" linkNode="machineRoom" loops="0" innerRadius="2" outerRadius="20" supportsReverb="false"> -->
+                    <!-- <volume indoor="0.4" outdoor="2"/> -->
+                <!-- </work2> -->
+                <!-- <dropping file="miningShaftTower/sounds/RocksDischarge.wav" linkNode="dropping" loops="0" innerRadius="2" outerRadius="30" supportsReverb="false" pitchScale="1.0"> -->
+                    <!-- <volume indoor="0.4" outdoor="4.0"/> -->
+                <!-- </dropping> -->
+            <!-- </sounds> -->
+            <!-- <animationNodes> -->
+                <!-- <animationNode class="ScrollingAnimation" node="belt" rotSpeed="-20" rotAxis="1" shaderComponentScale="-1 0 0 0" scrollSpeed="0.5" shaderParameterName="offsetUV"/> -->
+            <!-- </animationNodes> -->
+        </spawnArea>
+    </heapSpawner>
+
+    <i3dMappings>
+        <i3dMapping id="clearArea1Start" node="0>0|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>0|0|0|0" />
+        <i3dMapping id="clearArea1Width" node="0>0|0|0|1" />
+        <i3dMapping id="hotspot" node="0>0|1" />
+        <i3dMapping id="indoorAreas" node="0>0|2" />
+        <i3dMapping id="indoorArea1Start" node="0>0|2|0" />
+        <i3dMapping id="indoorArea1Height" node="0>0|2|0|0" />
+        <i3dMapping id="indoorArea1Width" node="0>0|2|0|1" />
+        <i3dMapping id="spawnArea" node="0>0|3" />
+        <i3dMapping id="spawnArea1Start" node="0>0|3|0" />
+        <i3dMapping id="spawnArea1Height" node="0>0|3|0|0" />
+        <i3dMapping id="spawnArea1Width" node="0>0|3|0|1" />
+        <i3dMapping id="testArea1Start" node="0>0|4|0" />
+        <i3dMapping id="testArea1End" node="0>0|4|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>0|5|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>0|5|0|0" />
+    </i3dMappings>
+</placeable>

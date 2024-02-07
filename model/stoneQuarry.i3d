@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="stoneQuarry" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="i3dConverter" version="1.0"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="default" materialId="1" diffuseColor="0.498039 0.498039 0.498039 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="stoneQuarry.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="stoneQuarry" nodeId="4">
+        <TransformGroup name="areas" nodeId="5">
+          <TransformGroup name="clearAreas" nodeId="6">
+            <TransformGroup name="clearArea1Start" translation="-2 0 2" nodeId="7">
+              <TransformGroup name="clearArea1Height" translation="0 0 -4" nodeId="8"/>
+              <TransformGroup name="clearArea1Width" translation="4 0 0" nodeId="9"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="hotspot" nodeId="10"/>
+          <TransformGroup name="indoorAreas" nodeId="11">
+            <TransformGroup name="indoorArea1Start" translation="-2 0 2" nodeId="12">
+              <TransformGroup name="indoorArea1Height" translation="0 0 -4" nodeId="13"/>
+              <TransformGroup name="indoorArea1Width" translation="4 0 0" nodeId="14"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="spawnArea" translation="6 0 0" nodeId="15">
+            <TransformGroup name="spawnArea1Start" translation="-2 0 6" nodeId="16">
+              <TransformGroup name="spawnArea1Height" translation="4 0 0" nodeId="17"/>
+              <TransformGroup name="spawnArea1Width" translation="0 0 -12" nodeId="18"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="testAreas" nodeId="19">
+            <TransformGroup name="testArea1Start" translation="-2 0 2" nodeId="20">
+              <TransformGroup name="testArea1End" translation="4 4 -4" nodeId="21"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="tipOcclusionUpdateAreas" nodeId="22">
+            <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-2 0 2" nodeId="23">
+              <TransformGroup name="tipOcclusionUpdateArea1End" translation="4 4 -4" nodeId="24"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="visuals" nodeId="25">
+          <Shape shapeId="1" name="Cube" translation="0 2 0" nodeId="26" materialIds="1" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>
