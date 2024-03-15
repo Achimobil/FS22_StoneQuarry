@@ -23,6 +23,8 @@
       <Custommap name="mMossDiffuse" fileId="7"/>
       <Custommap name="mParallaxMap" fileId="9"/>
     </Material>
+    <Material name="default" materialId="2" diffuseColor="0.498039 0.498039 0.498039 1">
+    </Material>
   </Materials>
 
 
@@ -34,41 +36,47 @@
   </Dynamics>
 
   <Scene>
-      <TransformGroup name="stoneQuarry" nodeId="5">
-        <TransformGroup name="areas" nodeId="6">
-          <TransformGroup name="clearAreas" nodeId="7">
-            <TransformGroup name="clearArea1Start" translation="-9 0 2" nodeId="8">
-              <TransformGroup name="clearArea1Height" translation="0 0 -4" nodeId="9"/>
-              <TransformGroup name="clearArea1Width" translation="15 0 0" nodeId="10"/>
+      <TransformGroup name="stoneQuarry" nodeId="9">
+        <TransformGroup name="areas" nodeId="10">
+          <TransformGroup name="clearAreas" nodeId="11">
+            <TransformGroup name="clearArea1Start" translation="-2 0 4" nodeId="12">
+              <TransformGroup name="clearArea1Height" translation="0 0 -8" nodeId="13"/>
+              <TransformGroup name="clearArea1Width" translation="10 0 0" nodeId="14"/>
             </TransformGroup>
           </TransformGroup>
-          <TransformGroup name="hotspot" nodeId="11"/>
-          <TransformGroup name="indoorAreas" translation="3 0 0" nodeId="12">
-            <TransformGroup name="indoorArea1Start" translation="-2 0 2" nodeId="13">
-              <TransformGroup name="indoorArea1Height" translation="0 0 -4" nodeId="14"/>
-              <TransformGroup name="indoorArea1Width" translation="4 0 0" nodeId="15"/>
+          <TransformGroup name="hotspot" nodeId="15"/>
+          <TransformGroup name="indoorAreas" translation="3 0 0" nodeId="16">
+            <TransformGroup name="indoorArea1Start" translation="-2 0 2" nodeId="17">
+              <TransformGroup name="indoorArea1Height" translation="0 0 -4" nodeId="18"/>
+              <TransformGroup name="indoorArea1Width" translation="4 0 0" nodeId="19"/>
             </TransformGroup>
           </TransformGroup>
-          <TransformGroup name="spawnArea" translation="3 0 0" nodeId="16">
-            <TransformGroup name="spawnArea1Start" translation="-2 0 2" nodeId="17">
-              <TransformGroup name="spawnArea1Height" translation="4 0 0" nodeId="18"/>
-              <TransformGroup name="spawnArea1Width" translation="0 0 -4" nodeId="19"/>
+          <TransformGroup name="spawnArea" translation="3 0 0" nodeId="20">
+            <TransformGroup name="spawnArea1Start" translation="-1 0 3" nodeId="21">
+              <TransformGroup name="spawnArea1Height" translation="5 0 0" nodeId="22"/>
+              <TransformGroup name="spawnArea1Width" translation="0 0 -6" nodeId="23"/>
             </TransformGroup>
           </TransformGroup>
-          <TransformGroup name="testAreas" nodeId="20">
-            <TransformGroup name="testArea1Start" translation="-9 0 2" nodeId="21">
-              <TransformGroup name="testArea1End" translation="14 4 -4" nodeId="22"/>
+          <TransformGroup name="testAreas" nodeId="24">
+            <TransformGroup name="testArea1Start" translation="-9 0 2" nodeId="25">
+              <TransformGroup name="testArea1End" translation="14 4 -4" nodeId="26"/>
             </TransformGroup>
           </TransformGroup>
-          <TransformGroup name="tipOcclusionUpdateAreas" nodeId="23">
-            <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-9 0 2" nodeId="24">
-              <TransformGroup name="tipOcclusionUpdateArea1End" translation="14 4 -4" nodeId="25"/>
+          <TransformGroup name="tipOcclusionUpdateAreas" nodeId="27">
+            <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-9 0 2" nodeId="28">
+              <TransformGroup name="tipOcclusionUpdateArea1End" translation="14 4 -4" nodeId="29"/>
             </TransformGroup>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="visuals" nodeId="26">
-          <Shape shapeId="1" name="Bogen" translation="-0.942102 1.92161 0" static="true" nodeId="27" materialIds="1" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="2" name="Cube" translation="-2.71422 2 0" static="true" nodeId="28" materialIds="1" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="visuals" nodeId="30">
+          <Shape shapeId="1" name="Bogen" translation="-0.942102 1.92161 0" static="true" nodeId="31" materialIds="1" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="Cube" translation="-2.71422 2 0" static="true" nodeId="32" materialIds="1" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="Pipe" translation="-1.11776 0.8 0" static="true" nodeId="33" materialIds="1" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="4" name="Cylinder" translation="2.14678 2.5516 0" rotation="0 -0 73.0347" scale="1.10129 1.81302 1" static="true" nodeId="34" materialIds="1" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="effectParticle" translation="4.75145 1.46031 -0.0241041" clipDistance="300" nodeId="35"/>
+            <TransformGroup name="effectSmoke" translation="4.75145 1.46031 -0.0241041" nodeId="36"/>
+            <Shape shapeId="5" name="emitterSmoke" translation="4.8 1.6 0" rotation="0 -0 180" scale="0.15 1 0.15" clipDistance="300" nodeId="37" materialIds="2" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
         </TransformGroup>
       </TransformGroup>
   </Scene>

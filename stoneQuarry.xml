@@ -5,8 +5,9 @@
         <functions>
             <function>$l10n_function_productionPoint</function>
         </functions>
-        <image>store_miningShaftTower.png</image>
-        <price>250000</price>
+        <image>store/stoneQuarry.dds</image>
+        <price>25000</price>
+        <dailyUpkeep>10</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>FARMERTOOLS</brand>
@@ -63,12 +64,13 @@
     </hotspots>
 
     <heapSpawner>
-        <spawnArea fillType="STONE" litersPerHour="2000" >
+        <spawnArea fillType="STONE" litersPerHour="20000" >
             <area startNode="spawnArea1Start" widthNode="spawnArea1Width" heightNode="spawnArea1Height" />
-            <!-- <effectNodes> -->
+            <effectNodes>
+				<effectNode effectClass="ParticleEffect" effectNode="emitterSmoke" particleType="MINING_SHAFT" emitCountScale="0.1"/>
                 <!-- <effectNode effectNode="effectSmoke" materialType="unloadingSmoke" fadeTime="0.5" /> -->
                 <!-- <effectNode effectNode="effectParticle" effectClass="ParticleEffect" particleType="MINING_SHAFT" emitCountScale="3"/> -->
-            <!-- </effectNodes> -->
+            </effectNodes>
             <!-- <sounds> -->
                 <!-- <work file="miningShaftTower/sounds/miningShaftTowerWork.wav" linkNode="tower" loops="0" innerRadius="7" outerRadius="40" supportsReverb="false"> -->
                     <!-- <volume indoor="0.4" outdoor="2.5"/> -->
@@ -91,11 +93,9 @@
         <i3dMapping id="clearArea1Height" node="0>0|0|0|0" />
         <i3dMapping id="clearArea1Width" node="0>0|0|0|1" />
         <i3dMapping id="hotspot" node="0>0|1" />
-        <i3dMapping id="indoorAreas" node="0>0|2" />
         <i3dMapping id="indoorArea1Start" node="0>0|2|0" />
         <i3dMapping id="indoorArea1Height" node="0>0|2|0|0" />
         <i3dMapping id="indoorArea1Width" node="0>0|2|0|1" />
-        <i3dMapping id="spawnArea" node="0>0|3" />
         <i3dMapping id="spawnArea1Start" node="0>0|3|0" />
         <i3dMapping id="spawnArea1Height" node="0>0|3|0|0" />
         <i3dMapping id="spawnArea1Width" node="0>0|3|0|1" />
@@ -103,5 +103,8 @@
         <i3dMapping id="testArea1End" node="0>0|4|0|0" />
         <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>0|5|0" />
         <i3dMapping id="tipOcclusionUpdateArea1End" node="0>0|5|0|0" />
+        <i3dMapping id="effectParticle" node="0>1|2|1" />
+        <i3dMapping id="effectSmoke" node="0>1|2|2" />
+        <i3dMapping id="emitterSmoke" node="0>1|2|3" />
     </i3dMappings>
 </placeable>

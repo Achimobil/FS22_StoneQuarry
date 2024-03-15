@@ -11,7 +11,7 @@
         </de>
     </description>
     <multiplayer supported="true"/>
-    <iconFilename>icon_bigDisplay.dds</iconFilename>
+    <iconFilename>icon_stoneQuarry.dds</iconFilename>
     <storeItems>
         <storeItem xmlFilename="stoneQuarry.xml"/>
     </storeItems>
