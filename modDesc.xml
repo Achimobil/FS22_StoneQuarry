@@ -1,44 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="79">
-    <author>Achimobil</author>
-    <version>0.0.0.1</version>
-    <title>
-        <de>Steinbruch</de>
-    </title>
-    <description>
-        <de>
-            <![CDATA[später]]>
-        </de>
-    </description>
-    <multiplayer supported="true"/>
-    <iconFilename>icon_stoneQuarry.dds</iconFilename>
-    <storeItems>
-        <storeItem xmlFilename="stoneQuarry.xml"/>
-    </storeItems>
-    <brands>
-        <brand name="FARMERTOOLS" title="Farmer Tools" image="store/brand_FarmerTools.dds"/>
-    </brands>
+	<author>Achimobil</author>
+	<version>0.0.0.1</version>
+	
+	<title>
+		<de>Steinbruch</de>
+	</title>
+	
+	<description>
+		<de>
+<![CDATA[später]]>
+		</de>
+	</description>
+	
+	<multiplayer supported="true"/>
+	
+	<iconFilename>icon_stoneQuarry.dds</iconFilename>
+	
+	<storeItems>
+		<storeItem xmlFilename="stoneQuarry.xml"/>
+	</storeItems>
+	
+	<brands>
+		<brand name="FARMERTOOLS" title="Farmer Tools" image="store/brand_FarmerTools.dds"/>
+	</brands>
 
-    <!-- <placeableSpecializations> -->
-        <!-- <specialization name="bigDisplay" className="BigDisplaySpecialization" filename="scripts/bigDisplaySpecialization.lua"/> -->
-    <!-- </placeableSpecializations> -->
+	<placeableSpecializations>
+		<specialization name="simpleHeapSpawner" className="PlaceableSimpleHeapSpawner" filename="scripts/PlaceableSimpleHeapSpawner.lua"/>
+	</placeableSpecializations>
     
-    <!-- <placeableTypes> -->
-        <!-- <type name="bigDisplayType" parent="simplePlaceable" filename="$dataS/scripts/placeables/Placeable.lua"> -->
-            <!-- <specialization name="bigDisplay"/> -->
-            <!-- <specialization name="infoTrigger" /> -->
-        <!-- </type> -->
-        <!-- <type name="colorDecoObject" parent="decoObject" filename="$dataS/scripts/placeables/Placeable.lua"> -->
-            <!-- <specialization name="colorable"/> -->
-        <!-- </type> -->
-    <!-- </placeableTypes> -->
-    
-    <!-- <l10n> -->
-        <!-- <text name="unversalDisplay"> -->
-            <!-- <de>Universal Anzeige (%s Zeilen)</de>  -->
-            <!-- <en>Universal Display (%s Lines)</en> -->
-            <!-- <ru>Универсальный дисплей (%s Строк)</ru> -->
-            <!-- <cz>Univerzální displej (%s Řádky)</cz> -->
-        <!-- </text> -->
-    <!-- </l10n> -->
+	<placeableTypes>
+		<type name="myMiningShaft" parent="simplePlaceable" filename="$dataS/scripts/placeables/Placeable.lua">
+			<specialization name="simpleHeapSpawner"/>
+		</type>
+	</placeableTypes>
 </modDesc>

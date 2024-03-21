@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="pdlc_forestryPack.miningShaft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../bin/shared/xml/schema/placeable.xsd">
+<placeable type="myMiningShaft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../bin/shared/xml/schema/placeable.xsd">
     <storeData>
         <name>$l10n_storeItem_miningShaftTower</name>
         <functions>
@@ -63,30 +63,15 @@
         <hotspot type="PRODUCTION_POINT" linkNode="hotspot" teleportNode="hotspot" />
     </hotspots>
 
-    <heapSpawner>
+    <simpleHeapSpawner>
         <spawnArea fillType="STONE" litersPerHour="20000" >
             <area startNode="spawnArea1Start" widthNode="spawnArea1Width" heightNode="spawnArea1Height" />
             <effectNodes>
-				<effectNode effectClass="ParticleEffect" effectNode="emitterSmoke" particleType="MINING_SHAFT" emitCountScale="0.1"/>
-                <!-- <effectNode effectNode="effectSmoke" materialType="unloadingSmoke" fadeTime="0.5" /> -->
-                <!-- <effectNode effectNode="effectParticle" effectClass="ParticleEffect" particleType="MINING_SHAFT" emitCountScale="3"/> -->
+				<!-- <effectNode effectClass="ParticleEffect" effectNode="emitterSmoke" particleType="MINING_SHAFT" emitCountScale="0.1"/> -->
+				<effectNode effectNode="emitterSmoke" effectClass="ParticleEffect" materialType="unloadingParticle" emitCountScale="0.001"/>
             </effectNodes>
-            <!-- <sounds> -->
-                <!-- <work file="miningShaftTower/sounds/miningShaftTowerWork.wav" linkNode="tower" loops="0" innerRadius="7" outerRadius="40" supportsReverb="false"> -->
-                    <!-- <volume indoor="0.4" outdoor="2.5"/> -->
-                <!-- </work> -->
-                <!-- <work2 file="miningShaftTower/sounds/machineRoom.wav" linkNode="machineRoom" loops="0" innerRadius="2" outerRadius="20" supportsReverb="false"> -->
-                    <!-- <volume indoor="0.4" outdoor="2"/> -->
-                <!-- </work2> -->
-                <!-- <dropping file="miningShaftTower/sounds/RocksDischarge.wav" linkNode="dropping" loops="0" innerRadius="2" outerRadius="30" supportsReverb="false" pitchScale="1.0"> -->
-                    <!-- <volume indoor="0.4" outdoor="4.0"/> -->
-                <!-- </dropping> -->
-            <!-- </sounds> -->
-            <!-- <animationNodes> -->
-                <!-- <animationNode class="ScrollingAnimation" node="belt" rotSpeed="-20" rotAxis="1" shaderComponentScale="-1 0 0 0" scrollSpeed="0.5" shaderParameterName="offsetUV"/> -->
-            <!-- </animationNodes> -->
         </spawnArea>
-    </heapSpawner>
+    </simpleHeapSpawner>
 
     <i3dMappings>
         <i3dMapping id="clearArea1Start" node="0>0|0|0" />
