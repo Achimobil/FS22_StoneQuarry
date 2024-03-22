@@ -1,16 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="79">
 	<author>Achimobil</author>
-	<version>0.0.0.1</version>
+	<version>0.1.0.0</version>
 	
 	<title>
 		<de>Steinbruch</de>
+		<en>Stone Quarry</en>
 	</title>
 	
 	<description>
 		<de>
-<![CDATA[später]]>
+<![CDATA[Der Steinbruch produziert kontinuierlich Steine welche z.B. mit einer Schaufel abgeholt werden können.
+Platzierung an Bergen oder Hängen möglich.
+Maximale Menge auf dem Boden ca. 28.000l
+
+Monatliche Unterhaltskosten: 1.800€
+Baukosten: 1.500€
+Monatliche Fördermenge: 24.000l
+
+Das enthaltene Skript für den PlaceableSimpleHeapSpawner darf ungeändert in jeden Mod kopiert, benutzt und veröffentlicht werden.
+Das Verändern des Skripts ist nicht erlaubt.
+
+Upload auf anderen Seiten nur durch mich selbst, Verlinkung nur mit Original Downloadlink. KEIN Ersatzlink!
+Das Verändern oder erneutes Hochladen, ob ganz oder in Teilen ist nicht gestattet!
+]]>
 		</de>
+		<en>
+<![CDATA[The quarry continuously produces stones which can be picked up with a shovel, for example.
+Placement at mountains or slopes possible.
+Maximum quantity on the ground approx. 28,000 litres
+
+Monthly maintenance costs: €1,800
+Construction costs: 1,500€
+Monthly flow rate: 24,000 litres
+
+The included script for the PlaceableSimpleHeapSpawner may be copied, used and published unmodified in any mod.
+Changing the script is not allowed.
+
+Upload on other pages only by myself, linking only with original download link. NO replacement link!
+Changing or re-uploading, whether in whole or in part, is not permitted!]]>
+		</en>
 	</description>
 	
 	<multiplayer supported="true"/>
@@ -34,4 +63,15 @@
 			<specialization name="simpleHeapSpawner"/>
 		</type>
 	</placeableTypes>
+    
+	<l10n>
+		<text name="storeItem_stoneQuarry">
+			<de>Steinbruch</de>
+			<en>Stone Quarry</en>
+		</text>
+		<text name="function_stoneQuarry">
+			<de>Produziert gegen Monatliche kosten von 1800€ kontinuierlich Steine</de>
+			<en>Produced against monthly costs of 1800$ continuously stones</en>
+		</text>
+	</l10n>
 </modDesc>

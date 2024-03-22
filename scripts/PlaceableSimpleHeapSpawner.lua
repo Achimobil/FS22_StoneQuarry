@@ -1,3 +1,19 @@
+--[[
+PlaceableSimpleHeapSpawner Script File
+
+Copyright (C) Achimobil 2024
+
+Author: Achimobil
+Date: 22.03.2024
+Version: 1.0.0.0
+
+Sciprt contains a heap spawner with spawn area and you could add default or own effects.
+
+This version of the script is allowed to use and publich unchanged in own mods/maps without asking.
+It is not allowed to change the script and republish it in any way. 
+
+]]
+
 PlaceableSimpleHeapSpawner = {
 	SPEC_NAME = g_currentModName .. ".simpleHeapSpawner"
 }

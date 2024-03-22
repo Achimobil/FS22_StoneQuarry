@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="myMiningShaft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../bin/shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>$l10n_storeItem_miningShaftTower</name>
+        <name>$l10n_storeItem_stoneQuarry</name>
         <functions>
-            <function>$l10n_function_productionPoint</function>
+            <function>$l10n_function_stoneQuarry</function>
         </functions>
-        <image>store/stoneQuarry.dds</image>
-        <price>25000</price>
-        <dailyUpkeep>10</dailyUpkeep>
+        <image>store/store_stoneQuarry.dds</image>
+        <price>15000</price>
+        <dailyUpkeep>1800</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>FARMERTOOLS</brand>
@@ -25,7 +25,7 @@
         <canBeRenamed>true</canBeRenamed>
     </base>
 
-    <placement useRandomYRotation="false" useManualYRotation="true" placementPositionSnapSize="0.5" placementRotationSnapAngle="90" >
+    <placement useRandomYRotation="false" useManualYRotation="true" placementPositionSnapSize="1" placementRotationSnapAngle="90" >
         <testAreas>
             <testArea startNode="testArea1Start" endNode="testArea1End" />
         </testAreas>
@@ -64,7 +64,7 @@
     </hotspots>
 
     <simpleHeapSpawner>
-        <spawnArea fillType="STONE" litersPerHour="20000" >
+        <spawnArea fillType="STONE" litersPerHour="1000" >
             <area startNode="spawnArea1Start" widthNode="spawnArea1Width" heightNode="spawnArea1Height" />
             <effectNodes>
 				<!-- <effectNode effectClass="ParticleEffect" effectNode="emitterSmoke" particleType="MINING_SHAFT" emitCountScale="0.1"/> -->

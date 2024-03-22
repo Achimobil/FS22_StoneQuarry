@@ -46,20 +46,20 @@
           </TransformGroup>
           <TransformGroup name="hotspot" nodeId="15"/>
           <TransformGroup name="indoorAreas" translation="3 0 0" nodeId="16">
-            <TransformGroup name="indoorArea1Start" translation="-2 0 2" nodeId="17">
-              <TransformGroup name="indoorArea1Height" translation="0 0 -4" nodeId="18"/>
-              <TransformGroup name="indoorArea1Width" translation="4 0 0" nodeId="19"/>
+            <TransformGroup name="indoorArea1Start" translation="-1.5 0 3" nodeId="17">
+              <TransformGroup name="indoorArea1Height" translation="0 0 -6" nodeId="18"/>
+              <TransformGroup name="indoorArea1Width" translation="6 0 0" nodeId="19"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="spawnArea" translation="3 0 0" nodeId="20">
-            <TransformGroup name="spawnArea1Start" translation="-1 0 3" nodeId="21">
+            <TransformGroup name="spawnArea1Start" translation="-1 0 2.5" nodeId="21">
               <TransformGroup name="spawnArea1Height" translation="5 0 0" nodeId="22"/>
-              <TransformGroup name="spawnArea1Width" translation="0 0 -6" nodeId="23"/>
+              <TransformGroup name="spawnArea1Width" translation="0 0 -5" nodeId="23"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="testAreas" nodeId="24">
-            <TransformGroup name="testArea1Start" translation="-9 0 2" nodeId="25">
-              <TransformGroup name="testArea1End" translation="14 4 -4" nodeId="26"/>
+            <TransformGroup name="testArea1Start" translation="-2 0 3" nodeId="25">
+              <TransformGroup name="testArea1End" translation="11 4 -6" nodeId="26"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="tipOcclusionUpdateAreas" nodeId="27">
